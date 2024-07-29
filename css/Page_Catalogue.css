@@ -1,0 +1,96 @@
+
+section {
+width: 48%;
+display: inline-block;
+margin:none;
+}
+
+#section_general { /* contenu entier */
+width: 80%;
+height: 100%;
+margin-top: 5mm;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 200px;
+display:block;
+border-radius: 10px;
+}
+
+#section01 { /* nom + desc1 + img personnage */
+background-repeat: no-repeat;
+background-size: 400px 400px;
+background-position:right;
+border-radius: 10px;
+}
+
+#orientation01 { /* div du nom + desc1 */
+width: 50%;
+color: black;
+text-align:center;
+display: inline-block;
+background-color:rgba(124, 168, 224, 0.3);
+border-radius: 10px;
+min-height: 400px;
+}
+
+#desc1 {
+width:82%;
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+color: white;
+font-size: large;
+}
+
+#orientation02 { /* div du nom + desc1 */
+width: 90%;
+text-align:center;
+display: block;
+margin-top: 10px;
+padding: 2px;
+background-color:rgba(124, 168, 224, 0.3);
+border-radius: 10px;
+/* min-height: 50px; */ /* brise l'orientation, pas toucher */
+}
+
+#desc2 {
+text-align: center;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+color: white;
+font-size: large;
+max-height: 80px;
+}
+
+.bouton_page {
+text-align: center;
+display: inline-block;
+padding: 15px 30px;
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+text-decoration: none;
+background: linear-gradient(45deg, #4a4e69, #22223b);
+border: none;
+border-radius: 50px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+transition: background 0.3s, transform 0.3s;
+}
+
+.bouton_page:hover {
+background: linear-gradient(45deg, #6a6b83, #393653);
+transform: scale(1.05);
+}
+
+.bouton_page:active {
+background: linear-gradient(45deg, #393653, #6a6b83);
+transform: scale(0.98);
+}
+
+#page {
+margin: 15px;
+font-size: larger;
+color: white;
+}
