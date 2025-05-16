@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site SAE303 - Concevoir et prévisualiser des données</title>
+
+    <link rel="stylesheet" href="./CSS/style.css"> 
+
+    <!-- Librairies amCharts -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <!-- pour les graphique qui utilise certaine librairie -->
+    <script src="https://cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+    
+    <script src="JS/scriptvideo.js"></script>
+</head>
+
+<body>
+
+<div class="background-conteneur01">
+    <main class="content">
+        <div class="carousel-container">
+            <div class="carousel-slide active" id="slide1">
+                <!-- contexte du début -->
+                <p class="contexte_principal">
+                    <span id="titre_principal">L'égalité des genres et du leadership dans les îles du Pacifique</span></br>
+
+                    Il était une fois un hémicycle. Sur les 50 sièges, seules 8 femmes sont présentes. Pas parce qu'elles ne veulent pas y être. Mais parce que tout, ou presque, rend leur chemin plus difficile.
+                    Dans le Pacifique, la représentation des femmes dans les sphères de pouvoir, qu'il s'agisse de politique ou de postes à responsabilité reste limitée. Pourtant, plusieurs pays ont mis en place des lois pour promouvoir l'égalité. Mais ces lois sont-elles réellement appliquées ?
+                     Les cadres juridiques censés garantir l'égalité existaient sur le papier, mais étaient rarement appliqués ou suivis.
+                    Pourtant, les choses changent. Lentement, mais sûrement.
+                    Aujourd'hui, dans certains pays, des femmes prennent la parole, rédigent les lois, dirigent des entreprises, façonnent la société. Mais dans d'autres, leur voix reste minoritaire. Le plafond de verre est toujours bien réel.
+                    À travers ce site, nous avons voulu transformer les chiffres en prises de conscience.
+                     Car derrière chaque pourcentage, il y a une réalité : des droits bafoués, des progrès notables, des zones d'ombre... et de l'espoir.
+                    L'égalité des sexes n'est pas un chiffre. C'est une promesse. Celle d'une société plus juste, où chaque voix compte. Dans le Pacifique, les données montrent que le chemin est encore long mais les exemples positifs prouvent qu'il est possible d'avancer.
+                    
+                </p>
+                <!-- flèche pour aller vers la vidéo -->
+                <!-- <div class="arrow arrow-right" onclick="showSlide(2)">&#9654;</div> -->
+            </div>
+
+            <!-- la vidéo a intégrer ici -->
+            <!-- <div class="carousel-slide" id="slide2">
+                <div class="arrow arrow-left" onclick="showSlide(1)">&#9664;</div>
+                <video controls poster="vignette.jpg">
+                    <source src="video.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                  </video>
+            </div> -->
+
+        </div>
+    </main>
+</div>
+    
+<div class="background-conteneur02">
+<main class="content">
+    
+    <p class="contexte">
+    Sur cette planète, nous sommes presque autant de femmes que d'hommes.
+    Pourtant, cette égalité dans les chiffres ne se traduit pas toujours dans la vie quotidienne.
+    Ce graphique nous rappelle une évidence : l'égalité devrait être naturelle… mais elle reste encore à construire.
+    </p>
+
+    <span id="titre_principal">Population mondiale Homme / Femme</span>
+    <span class="para_italique">Données population mondiale de 2021.</span></br>
+    <div id="chartdiv00"></div> 
+    <!-- modifier l'id pour chaque script, permet de construire le graphique dedans -->
+
+    <script type="module" src="JS/script00.js"></script> 
+    <!-- graphique 1 (population mondiale homme et femme) -->
+</main>
+</div>
+
+<div class="background-conteneur03">
+<main class="content">
+    <p class="contexte">
+    En Océanie, la population est d'environ 44 millions de personnes.
+    Parmi elles, on compte environ 22,1 millions d'hommes et 21,9 millions de femmes.
+    Une répartition presque équilibrée… en apparence.
+    Car malgré cette parité démographique, les inégalités entre les sexes restent bien présentes, notamment en politique, dans les postes de direction ou dans l'accès aux droits.
+    </p>
+
+    <span id="titre_principal">Population en Océanie</span></br>
+    <span class="para_italique">Données population en Océanie en 2022.</span></br>
+    <div id="chartdiv01"></div> 
+    <!-- modifier l'id pour chaque script, permet de construire le graphique dedans -->
+
+    <script type="module" src="JS/script01.js"></script> 
+    <!-- graphique 2 (population océanie) -->
+</main>
+</div>
+
+<div class="background-conteneur04">
+<main class="content">
+    <p class="contexte">
+    Ce graphique montre la place des femmes dans les assemblées nationales.
+    Dans le Pacifique, cette représentation reste encore très faible dans plusieurs pays. 
+    Pourtant, une présence équilibrée garantit une meilleure diversité des idées et des décisions plus justes.
+    </p>
+
+    <span id="titre_principal">Proportion de sièges occupés par des femmes dans les parlements nationaux</span>
+    <span class="para_italique">Données du nombre de siège occupés par des femmes (en %), entre 2013 et 2021, via la BDD fourni, regroupé par grande région géographique.</span></br>
+    <div id="chartdiv02"></div> 
+    <!-- modifier l'id pour chaque script, permet de construire le graphique dedans -->
+
+    <script type="module" src="JS/script02.js"></script> 
+    <!-- graphique 3 (Proportion de sièges occupés par des femmes dans les parlements nationaux) -->
+
+</main>
+</div>
+
+<div class="background-conteneur05">
+<main class="content">
+    <p class="contexte">
+        Être dirigeante, c'est avoir un vrai pouvoir d'action. 
+        Ce graphique nous montre combien de femmes accèdent aux postes de responsabilité dans les entreprises et institutions. 
+        Des écarts notables existent entre les pays du Pacifique, révélant les freins — culturels ou structurels — qui limitent leur accès à ces fonctions.
+    </p>
+
+    <span id="titre_principal">Proportion de femmes occupant des postes de direction</span>
+    <span class="para_italique">
+        Données du nombre de femmes occupant des postes de direction (en %), 
+        entre 2013 et 2021, via la BDD fourni, par pays (veuillez zoomer / dézoomer pour plus de pertinence, pavé tactile recommandé).</span></br>
+    <div id="chartdiv03"></div> 
+    <!-- modifier l'id pour chaque script, permet de construire le graphique dedans -->
+
+    <script type="module" src="JS/script03.js"></script> 
+    <!-- graphique 4 (Proportion de femmes occupant des postes de direction) -->
+
+</main>
+</div>
+
+<div class="background-conteneur06">
+<main class="content">
+
+    <p class="contexte">
+        Les quatre domaines juridiques analysés ici évaluent la qualité des lois mises en place pour garantir l'égalité entre les sexes. 
+        Même si certains pays atteignent des scores élevés, cela ne signifie pas toujours que ces lois sont réellement appliquées ou respectées.
+    </p>
+
+    <span id="titre_principal">Cadres Juridiques - Domaine 1 à 4 sur l'égalité des sexes</span>
+    <span class="para_italique">Données sur l'égalité des sexes, sur plusieurs domaines, entre 2013 et 2021, via la BDD fourni. Ce graphique est peu pertinent par manque de données.</span></br>
+    <div id="chartdiv04"></div>
+    <!-- modifier l'id pour chaque script, permet de construire le graphique dedans -->
+
+    <script type="module" src="JS/script04.js"></script> 
+    <!-- graphique 5 (Cadres juridiques – Domaines 1 à 4 (égalité des sexes)) -->
+
+</main>
+</div>
+
+<div class="background-conteneur07">
+<main class="content">
+    <p class="contexte">
+        Ici, on s’intéresse à une question fondamentale : 
+        les femmes ont-elles les mêmes droits que les hommes selon la loi ? 
+        Ce graphique nous montre la proportion de pays du Pacifique où c'est officiellement le cas — mais attention, cela ne reflète pas toujours la réalité vécue au quotidien.
+    </p>
+
+    <span id="titre_principal">Proportion de pays où le droit (y compris coutuminer) garantit l'égalité</span>
+    <span class="para_italique">Données par années depuis la BDD des pays ou le droit garantit l'égalité, de 2013 à 2021, en %. ce graphique est très peu pertinent par manque de données.</span></br>
+    <div id="chartdiv05"></div> 
+    <!-- modifier l'id pour chaque script, permet de construire le graphique dedans -->
+
+    <script type="module" src="JS/script05.js"></script> 
+    <!-- graphique 6 (Proportion de pays où le droit (y compris coutumier) garantit l’égalité) -->
+</main>
+</div>
+
+<footer>
+<p>&copy; SAE303 2025. Tous droits réservés.</p>
+</footer>
+
+
+<!-- test d'import des données et utilisation des fonctions map(), filter(), reduce()-->
+<!-- <script src="JS/Donnees/test.js"></script>  -->
+<!-- <script src="JS/script02.js"></script>  -->
+
+
+<script src="JS/Donnees/donnees.js"></script>
+<!-- import et utilisation des données réel -->
+
+</body>
+</html>

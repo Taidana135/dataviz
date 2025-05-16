@@ -1,0 +1,237 @@
+/* va tout modifier */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+color: #000000;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 0;
+}
+
+.background-conteneur01 {
+background-image: url('../IMAGE/nouvelle-caledonie-une.jpg');
+background-repeat: no-repeat;
+}
+
+.background-conteneur02 {
+background-image: url('../IMAGE/Hombre-versus-mujer-2.jpg');
+background-repeat: no-repeat;
+}
+
+.background-conteneur03 {
+background-image: url('../IMAGE/carte-capitales-oceanie.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.background-conteneur04 {
+background-image: url('../IMAGE/assemblee-20220727.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.background-conteneur05 {
+background-image: url('../IMAGE/cv-585-1920x960.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.background-conteneur06 {
+background-image: url('../IMAGE/egalite-chances-filles-garcons.webp');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.background-conteneur07 {
+background-image: url('../IMAGE/egalite_hommes_femmes.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.content {
+  padding: 40px; /* Augmente la largeur et le padding du contenu */
+  max-width: 900px; /* Agrandir le conteneur */
+  margin: 0 auto;
+  margin-top: 150px; /* ne colle pas le haut de la page */
+  margin-bottom: 100px;
+  text-align: justify;
+  line-height: 1.8; /* Augmente l'interligne pour une meilleure lisibilité */
+  font-size: 1.2em; /* Augmente la taille de la police */
+
+  /* le rendu joli */
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  backdrop-filter: blur(5px); 
+}
+
+.contexte_principal {
+  padding: 30px 30px;
+  background: linear-gradient(to bottom right, #ffffff, #eaeaea);
+  border-left: 6px solid #ae00ff; /* Bord gauche décoratif */
+  border-right: 6px solid #ae00ff; /* Bord droit décoratif */
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* ombre */
+  color: #222;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-style: italic; /* Texte italique */
+  animation: fadeIn 1s ease-out both;
+}
+
+/* caroussel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.6s ease-in-out, visibility 0.6s;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+
+/* Flèches */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  color: #0077cc;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #e0e0e0;
+}
+
+.arrow-right {
+  right: -20px;
+}
+
+.arrow-left {
+  left: -20px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  min-height: 630px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* fin carrousel */
+
+.para_italique {
+font-size: 70%;
+font-style: italic;
+
+}
+
+#titre_principal {
+font-size: 1.4rem;
+font-weight: bold;
+color: #111;
+text-align: center; 
+display: block; 
+
+font-style: normal; /* Le titre n’est pas en italique */
+}
+
+.contexte_principal p {
+margin-bottom: 1rem;
+}
+
+/* pour modifier l'espace entre texte et graphique */
+.contexte {
+margin-bottom: 20px;
+}
+
+/* utilisation d'un id pour chacun, pour le fonctionnement de AmChart */
+/* graphique 1 */
+#chartdiv00 {
+width: 100%;
+height: 500px;
+}
+
+/* graphique 2 */
+#chartdiv01 {
+width: 100%;
+height: 600px;
+}
+
+/* graphique 3 */
+#chartdiv02 {
+width: 100%;
+height: 500px;
+}
+
+/* graphique 4 */
+#chartdiv03 {
+width: 100%;
+height: 500px;
+}
+
+/* graphique 5 */
+#chartdiv04 {
+width: 100%;
+height: 500px;
+}
+
+/* graphique 6 */
+#chartdiv05 {
+width: 100%;
+height: 550px;
+}
+
+footer {
+text-align: center;
+margin-top: 10px;
+margin-bottom: 20px;
+color: #777;
+font-size: 0.9em;
+}
+
+/* Animation douce */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
